@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-light bg-light">
+        <a class="navbar-brand" href="#">Work Day Schedule</a>
+    </nav>
+    
+
+    <h2>Today's Date</h2>
+    <!-- container for Moment.js output -->
+    <div id="displayMoment"></div>
+    </br>
+
+
+    <div class="grid-container">
+        <form name="myform" id="application" action="apply.php">
+            <div class="input-group">
+                <div class="grid-item" id="clock">08:00am</div>
+                <div class="grid-item"><input type="text_area" id="content1" placeholder="Event">
+                    <button input type="button" onclick="myFunction(document.querySelector('#content1').id)">save</button>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="grid-item" id="clock">09:00am</div>
+                <div class="grid-item"><input type="text_area" id="content2" placeholder="Event">
+                    <button input type="button" onclick="myFunction(document.querySelector('content2').id)">save</button>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="grid-item" id="clock">10:00am</div>
+                <div class="grid-item"><input type="text_area" id="content3" placeholder="Event">
+                    <button input type="button" onclick="myFunction(document.querySelector('#content3').id)">Save</button>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="grid-item" id="clock">11:00am</div>
+                <div class="grid-item"><input type="text_area" id="content4" placeholder="Event">
+                    <button input type="button" onclick="myFunction(document.querySelector('#content4').id)">Save</button>
+                </div>
+            </div>
+
+
+            <div class="input-group">
+                <div class="grid-item" id="clock">12:00pm</div>
+                <div class="grid-item"><input type="text_area" id="content5" placeholder="Event">
+                    <button input type="button" onclick="myFunction(document.querySelector('#content5').id)">save</button>
+
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="grid-item" id="clock">01:00pm</div>
+                <div class="grid-item"><input type="text_area" id="content6" placeholder="Event">
+                    <button input type="button" onclick="myFunction(document.querySelector('#content6').id)">save</button>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="grid-item" id="clock">02:00pm</div>
+                <div class="grid-item"><input type="text_area" id="content7" placeholder="Event">
+                    <button input type="button" onclick="myFunction(document.querySelector('#content7').id)">save</button>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="grid-item" id="clock">03:00pm</div>
+                <div class="grid-item"><input type="text_area" id="content8" placeholder="Event">
+                    <button input type="button" onclick="myFunction(document.querySelector('#content8').id)">save</button>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="grid-item" id="clock">04:00pm</div>
+                <div class="grid-item"><input type="text_area" id="content9" placeholder="Event">
+                    <button input type="button" onclick="myFunction(document.querySelector('#content9').id)">save</button>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="grid-item" id="clock">05:00pm</div>
+                <div class="grid-item"><input type="text_area" id="content10" placeholder="Event">
+                    <button input type="button" onclick="myFunction(document.querySelector('#content10').id)">save</button>
+                </div>
+            </div>
+
+
+
+
+        </form>
+
+    </div>
+
+
+
+
+
+
+
+
+    <!--form for entering event-->
+    <div class="container0" hidden>
+        <div class="col-lg-8 col-sm-12 mx-auto">
+            <form>
+                <div class="form-group">
+                    <label for="title">Event</label>
+                    <textarea class="form-control" id="eventInput" rows="3" placeholder="enter event here">
+                    </textarea>
+                </div>
+                <div class="form-group">
+                    <label for="">Start</label>
+                    <input type="datetime-local" class="form-control" name="startTime" placeholder="Enter Start Time">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">End</label>
+                    <input type="datetime-local" class="form-control" name="endTime" placeholder="Enter End Time">
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="">Choose Color</label>
+                    <input type="color" class="form-control" name="color">
+
+                </div>
+                <div id="Submit"></div>
+                <button id="Save">Save</button>
+
+            </form>
+        </div>
+
+    </div>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="main.js"></script>
+
+
+
+</body>
+
+</html>
+</body>
+</html>
